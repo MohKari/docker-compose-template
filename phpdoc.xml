@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>App Plugins Documentations</title>
+    <parser>
+        <target>docs</target>
+    </parser>
+    <transformer>
+        <target>docs</target>
+    </transformer>
+    <files>
+        <directory>www</directory>
+    </files>
+</phpdoc>

@@ -1,0 +1,10 @@
+## NOTES
+
+LAMP Stack is forked from https://github.com/sprintcube/docker-compose-lamp/tree/7.2.x
+
+When using Docker with VPN you need to change your subnet address to
+192.168.x.x (192.168.248.0 works for me), otherwise the VPN seems to
+kill any access to Docker, which is quite annoying, i have also added
+an entry to my hosts file to change the url from the default localhost
+
+Run create-documentation.bat as admin to create documentation
