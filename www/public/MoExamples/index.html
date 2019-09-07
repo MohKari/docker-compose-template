@@ -1,0 +1,44 @@
+
+<button id="button">Hit Me!</button>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+    function myFunction(variable){
+      alert(variable);
+        console.log("Smells like teen spirit!!");  
+        
+    }
+    
+    //myFunction("3.14");
+    var a=42;
+    //myFunction(a);
+    var cars=['VW', 'BMW', 'Tesla'];
+    console.log(cars[0]);
+    
+    for (i=0; i<cars.length; i++){
+        console.log(cars[i]);
+    }
+    
+    cars.forEach(function(make){
+        console.log(make);
+     
+    })
+    $("#button").click(function(){
+         alert("Dont press that again!!");
+
+  $( "button" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+
+         
+     })  
+    
+//    $("#button").hide();
+</script>
+
