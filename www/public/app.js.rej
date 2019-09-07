@@ -1,0 +1,10 @@
+diff a/www/public/app.js b/www/public/app.js	(rejected hunks)
+@@ -2,4 +2,5 @@
+ //Generate the random number and test with console.log.
+ //I missed the brackets off Math.random caused all manner of head scratching.
+ var secret = Math.floor((Math.random())  * 100 + 1);
+-console.log(secret);
+\ No newline at end of file
++var guess = document.getElementById(guess);
++console.log(guess);
+\ No newline at end of file
