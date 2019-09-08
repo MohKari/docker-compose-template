@@ -4,7 +4,8 @@
 var secret = Math.floor((Math.random())  * 100 + 1);
 var guess = 0;
 $("#button").click(function(){
-        var guess = document.getElementById(userInput);
+        var guess = document.getElementById("userInput").value;
+        //guess = parseInt("guess", 10);
         console.log(guess);
  })
 console.log(guess);
