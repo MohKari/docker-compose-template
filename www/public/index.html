@@ -3,12 +3,17 @@
 <head>
     <title>1-100 Guessing Game</title>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </head>
 <body>
     <h1>The Amazing 1-100 Guessing Game.</h1>
     <P>I am thinking of a number between 1 and 100 can you guess it? Please enter a number between 1 and 100.</P>
-    <div id="userInput"></div>
+       <div id="userInput">
+           <form id="guess">
+                <legend>Enter your guess</legend>
+                    <input type="text" name="input">
+         </form>
+     </div>
+     <script src="app.js"></script>
     <div id="gameOutput"></div>
 </body>
 </html>
