@@ -1,0 +1,15 @@
+diff a/www/public/index.html b/www/public/index.html	(rejected hunks)
+@@ -8,6 +8,12 @@
+ <body>
+     <h1>The Amazing 1-100 Guessing Game.</h1>
+     <P>I am thinking of a number between 1 and 100 can you guess it? Please enter a number between 1 and 100.</P>
++    <div id="userInput">
++        <form>
++        <legend>Enter your guess</legend>
++            <input type="text" name="input" id="guess">
++        </form>
++    </div>
+     <div id="gameOutput"></div>
+ </body>
+ </html>
+\ No newline at end of file
