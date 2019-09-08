@@ -2,5 +2,9 @@
 //Generate the random number and test with console.log.
 //I missed the brackets off Math.random caused all manner of head scratching.
 var secret = Math.floor((Math.random())  * 100 + 1);
-var guess = document.getElementById(guess);
+var guess = 0;
+$("#button").click(function(){
+        var guess = document.getElementById(userInput);
+        console.log(guess);
+ })
 console.log(guess);
