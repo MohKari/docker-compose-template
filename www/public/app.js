@@ -1,14 +1,8 @@
 //Kurgamemnon 07092019
-//Generate the random number and test with console.log.
-//I missed the brackets off Math.random caused all manner of head scratching.
+//Generate a random number between 1 and 100.
 var secret = Math.floor((Math.random())  * 100 + 1);
-var guess = 0;
+//Get user input and store it as a number. 
+//It's local scope so can't be accessed outside of the function.
 $("#button").click(function(){
-        guess = document.getElementById("userInput").value;
-        console.log(guess);
-        guess = parseInt("guess", 10);
-        console.log(guess);
-        console.log(typeof guess);
-    //guess is returning a string, but it won't convert to an int. Nan when I try to parse it.
- })
-console.log(guess);
+        var guess = document.getElementById("userInput").valueAsNumber;
+})
