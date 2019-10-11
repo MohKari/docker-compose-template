@@ -23,7 +23,7 @@ $("#button").click(function(){
     else if (guess < secret){
         gameOutput("Too low please guess again.");
     }
-    else (guess == secret){
+    else {
         gameOutput("Well done you have guessed correctly.");
     }
  
