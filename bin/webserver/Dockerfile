@@ -72,12 +72,12 @@ RUN docker-php-ext-install gettext
 RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
 
 # BUG FIX? (HOPEFULLY STOP the "freetype" BELOW FROM ERRORING...)
-RUN apt-get update && apt-get install -y pkg-config patch
-ADD https://git.archlinux.org/svntogit/packages.git/plain/trunk/freetype.patch?h=packages/php /tmp/freetype.patch
-RUN docker-php-source extract; \
-    cd /usr/src/php; \
-    patch -p1 -i /tmp/freetype.patch; \
-    rm /tmp/freetype.patch
+# RUN apt-get update && apt-get install -y pkg-config patch
+# ADD https://git.archlinux.org/svntogit/packages.git/plain/trunk/freetype.patch?h=packages/php /tmp/freetype.patch
+# RUN docker-php-source extract; \
+#     cd /usr/src/php; \
+#     patch -p1 -i /tmp/freetype.patch; \
+#     rm /tmp/freetype.patch
 
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 RUN docker-php-ext-install -j$(nproc) gd
