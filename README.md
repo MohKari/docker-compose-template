@@ -16,7 +16,7 @@ This project contains everything you need to quickly get a "Dev" environment up 
 ### Clone Repository
 Be sure to replace "project-name" with your project's name.
 ```shell
-git clone https://mohkari-plumbase@bitbucket.org/mohkari-plumbase/docker-compose-lamp-stack.git docker-compose-lamp-stack-project-name
+git clone https://github.com/MohKari/docker-compose-template.git docker-compose-lamp-stack-project-name
 ```
 
 ### Duplicate Sample Environment File
